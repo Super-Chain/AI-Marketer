@@ -55,7 +55,7 @@ Super Chain (www.super-chain.tech)
 
 LAU, Ching Ming, Samuel (Github : samuellau0802)
 
-Motaz SaidaniView (Github : Motaz-Saidani)
+Motaz Saidani (Github : Motaz-Saidani)
 
 We welcome your contribution anytime
 
