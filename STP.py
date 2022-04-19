@@ -110,25 +110,5 @@ def STP(nav):
                     st.plotly_chart(fig, use_container_width=True)
 
 
-                    '''
-                    cluster_options = list(st.session_state['kmeans_results']['Cluster'].unique())
-                    cluster = st.radio('Select the cluster to check the info', cluster_options)
-                    cluster = str(cluster)
-                    st.write('You selected', cluster) 
-                    cluster_info = st.session_state['kmeans_results'].loc[st.session_state['kmeans_results']['Cluster'] == cluster]
-                    st.dataframe(cluster_info.describe().T)
-                    
-                    #AttributeError: 'ClusteringExperiment' object has no attribute 'fold_generator'
-
-                    options = str(list(data))
-                    example_variable = 'Age'
-                    st.write('Here is the list of variables that you can choose from',options)
-                    variable = st.text_input('Input the one variable, to see the distribution',example_variable)
-
-                    if st.button('Plot'):
-                            with st.spinner('Plotting graph...') :
-                    plot_model(kmeans,plot='distribution',feature=variable,display_format='streamlit')
-                    '''
-
-                    
+  
 
