@@ -1,4 +1,5 @@
-# AI Marketer
+<img src="https://www.ai-marketer.tech/wp-content/uploads/2022/03/1-removebg-preview-e1648533328450.png">
+
 ## What is AI Marketer ?
 AI Marketer is an AI-enabled marketing analytics tool that uses only a few clicks to generate insightful data.
 Its for online marketer to analyze marketing data by AI & ML algorithms without a single-line of code.
@@ -10,6 +11,13 @@ www.ai-marketer.tech
 
 ## Demo : 
 http://www.app.ai-marketer.tech:8501/
+
+## How to start the streamlit server ?
+```
+streamlit run app.py
+OR
+python -m streamlit run app.py
+```
 
 ## Why we create AI Marketer ?
 To help marketer with no statistic / data analytics background to analyze data and handling routine marketing task in just a few clicks
