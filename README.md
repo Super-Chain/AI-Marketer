@@ -23,7 +23,7 @@ python -m streamlit run app.py
 To help marketer with no statistic / data analytics background to analyze data and handling routine marketing task in just a few clicks
 
 ## Tutorial :
-https://studio.youtube.com/channel/UCvmEPC9fUfY8L2-v9IV1i4w
+https://youtube.com/channel/UCvmEPC9fUfY8L2-v9IV1i4w
 
 ## What packages do we use ?
 AI Marketer is a non-profit open-source project, we build AI Marketer with a lot of help from other open source packages :
