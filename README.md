@@ -58,6 +58,18 @@ Two Parts – Tasks / Module
 <br/>``` Segment tags``` (analysed by the system):
 <br/>Champions > Loyal Accounts > Potential Loyalist > New Active Account > Low Spenders > At Risk > Need Attention > About to Sleep > Lost
 
+## Road Map 
+
+### Integration with 3rd parties datasource by API
+
+Our product focuses on analysing the data which users need to upload. At this moment, we are required to upload a CSV file. In order to increase the usage and convenience, we propose to integrate with 3rd parties data source , e.g : Google Sheet , Zapier for better user experience.
+
+### Intended Outcome:
+Users can get seamless integration with their datasource, instead of using manual input by uploading a local CSV file.
+
+### Suggested Integration : 
+Google Sheet , 2. Zapier , 3. Database 
+
 
 ## What packages do we use ?
 AI Marketer is a non-profit open-source project, we build AI Marketer with a lot of help from other open source packages :
