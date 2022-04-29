@@ -25,6 +25,40 @@ To help marketer with no statistic / data analytics background to analyze data a
 ## Tutorial :
 https://youtube.com/channel/UCvmEPC9fUfY8L2-v9IV1i4w
 
+## Features :
+
+Two Parts – Tasks / Module
+
+**Task**:
+</br>→ Combine different modules to analysis and generate different graphs
+</br> Example: RFM model = Classification + Regression
+</br>Analyse CSV file and show the data into bar chart by analysed segment groups 
+
+
+**Module**:
+</br>→ independent function and method
+</br>
+
+| Tasks | Input | Result |
+| :-------------: | :-------------: | ------------- |
+| Price Analysis  | Product name and ```Country Code``` (Alpha-2)  | list and line chart show all the shops with name and price |
+| Trend Forecast  | Product name and *```Country Code``` (Alpha-2)  | Show the prediction of the upcoming month and seasonality <br/> <br/>Line chart and list will be shown |
+| RFM model  | Upload a CSV file  | Show the table after system made RFM ```Segment tags``` for each customer <br/>  <br/>Bar chart show the distribution of the RFM tags |
+| Competitor Analysis  | Upload a CSV file  | Show the list of different shops with score in different aspects <br/>  <br/>Positioning Map: Select two aspects and located based on the relationship|
+| Customer Segmentation  | Upload a CSV file  | Cluster to show to distribution of the customers <br/> <br/>Elbow graph show the value of k <br/> <br/>List and bar chart to show the performance of different customer groups <br/> <br/>Bottom Section: All the statistics are shown by different customer groups |
+| Review Analysis  | Upload a CSV file  | Filter the keywords that the customer mentioned <br/> <br/>Line chart shows the trend of the topics over time <br/> <br/>Topic Distance Map: show the similarity of different words|
+| Google adWord Generator  | Type keywords combination  | A list of showing all the words combination with ```Match_type``` |
+| Cart Analysis  | Upload a CSV file  | A list of showing the relationship of different products <br/> <br/>(high probability → closer relationship) |
+
+*Optional, Default: the whole world
+
+>For your reference:
+<br/>``` Country Code ```: https://www.iban.com/country-codes
+<br/>``` Match_type ```: https://support.google.com/google-ads/answer/7478529?hl=en
+<br/>``` Segment tags``` (analysed by the system):
+<br/>Champions > Loyal Accounts > Potential Loyalist > New Active Account > Low Spenders > At Risk > Need Attention > About to Sleep > Lost
+
+
 ## What packages do we use ?
 AI Marketer is a non-profit open-source project, we build AI Marketer with a lot of help from other open source packages :
 
