@@ -5,11 +5,15 @@ import streamlit as st
 import re
 import plotly.express as px
 from util import p_title
+from decimal import Decimal
 
 headers = { 
     "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582"
 }
+
+
+
 
 def priceanalysis(nav):
     if nav == '🤑Price Analysis':
@@ -25,13 +29,11 @@ def priceanalysis(nav):
 
         def isalive(response):
             return response.status_code == 200
-
+        
         def format_price(price):
-            expr = '\$([0-9,]*\.[0-9]*)'
-            match = re.search(expr, price)           
-            price_without_comma = match.group(1).replace(',', '')  
-            price_num = float(price_without_comma)  
-            return price_num    
+
+            price_num = Decimal("".join(d for d in price if d.isdigit() or d == '.'))
+            return int(price_num)
 
 
         if st.button("Analyze"):
@@ -110,7 +112,7 @@ def priceanalysis(nav):
                 graph['Price'] = graph['Price'].apply(format_price)
                 graph = graph.sort_values(by='Price')
 
-                fig = px.bar(graph, y="Price")
+                fig = px.line(graph, y="Price")
                 st.plotly_chart(fig, use_container_width=True)
                 st.title('Price Statistics')
                 st.dataframe(pd.DataFrame(graph['Price'].describe()).iloc[[1,2,3,5,7]].T, width=900)
