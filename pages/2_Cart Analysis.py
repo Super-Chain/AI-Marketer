@@ -7,7 +7,6 @@ from pycaret.arules import *
 from io import StringIO
 from pycaret.datasets import get_data
 
-
 st.text('')
 st.title('💰Cart Analysis')
 st.text('')

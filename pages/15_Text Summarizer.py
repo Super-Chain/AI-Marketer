@@ -30,8 +30,8 @@ if st.button('Summarize') :
         if input_sum =='':
             st.error('Please enter some text')
         else:
-        with st.spinner('Wait for it...'):
-            result = summarizer(input_sum,max_length=int(input_max),min_length=int(input_min))
-            st.write([result][0][0]["summary_text"]) 
+            with st.spinner('Wait for it...'):
+                result = summarizer(input_sum,max_length=int(input_max),min_length=int(input_min))
+                st.write([result][0][0]["summary_text"]) 
 
 

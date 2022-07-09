@@ -1,7 +1,12 @@
 import streamlit as st
-import requests
 import streamlit.components.v1 as components
 
+st.set_page_config(page_title="AI Marketer - No Code Marketing Analysitcs", 
+                page_icon=":robot_face:",
+                layout="wide",
+                initial_sidebar_state="expanded"
+                )
+from re import X
 
 
 #########
@@ -20,9 +25,9 @@ components.html("""
 """)
 st.text('')
 st.text('')
-st.image('./howitworks.png')
-st.image('./modules1.png')
-st.image('./modules2.png')
+
+st.image('modules1.png')
+st.image('modules2.png')
 
 
 st.text('')
