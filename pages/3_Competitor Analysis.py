@@ -29,7 +29,7 @@ def synonyms(term):
 
 
 st.text('')
-p_title('🏇Competitor Analysis')
+st.title('🏇Competitor Analysis')
 st.text('')
 st.markdown(':white_check_mark:Xray your competitor and their performance by user feedback')
 st.write('Suggested Data : Competitor Name , Competitor Reviews, Rating(1-5)')
@@ -62,52 +62,11 @@ if st.button('Get Demo Data') :
 
         #st.write("TRAINING MODEL")
 
-        '''
-        ### train Top2Vec model 
-        model = Top2Vec(documents=contents, speed='learn', embedding_model='doc2vec')
-        # word similarity threshold
-        threshold = 0.5
-
-        #st.write("FINISHED TRAINING MODEL")
-
-        ### check if all input attributes have been trained by the model
-        for ind, att in enumerate(attributes):
-            try:
-                model.similar_words(keywords=[att], keywords_neg=[], num_words=1)
-            # if not trained
-            except ValueError as e:
-                st.write(att, 'has not been trained')      
-                # find other word forms of this word
-                forms = get_word_forms(att)
-                forms = list(set([i for j in list(forms.values()) for i in j]) - {att})
-                for form in forms:
-                    st.write("Trying " + form)
-                    try:
-                        # and try these words
-                        model.similar_words(keywords=[form], keywords_neg=[], num_words=1)
-                        # if trained, change to this word
-                        attributes[ind] = form
-                        st.write(f"{att} has not been trained. It has been changed to {form}")
-                        break
-                    except ValueError as e:
-                        pass
-                    # when all fail
-                    st.error(f"{att} has not been trained. No similar words have been found. Try to change your input!")
-        '''
-
 
         #st.write("FINDING SIMILAR KEYWORDS")
 
         for att in attributes:
-            ### Top2Vec Approach
-            '''
-            words, word_scores = model.similar_words(keywords=[att], keywords_neg=[], num_words=20)
-            # spaces are added in front and at back to prevent subword occurrence
-            words = [' '+w[0]+' ' for w in list(zip(words, word_scores)) if w[1] > threshold]
-            # add the original attribute
-            words.append(' '+att+' ')
-            all_words.append(words)
-            '''
+
             ### Synonym Approach
             words = synonyms(att)
             # spaces are added in front and at back to prevent subword occurrence
