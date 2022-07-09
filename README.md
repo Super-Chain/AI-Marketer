@@ -12,11 +12,12 @@ www.ai-marketer.tech
 ## Demo : 
 http://www.app.ai-marketer.tech:8501/
 
+## Update: 
+Updated the pages structure of Streamlit App, based on that all the functions are being moved to /pages folder, if you are not able to replicate the pages function, please update your streamlit version
+
 ## How to start the streamlit server ?
 ```
-streamlit run app.py
-OR
-python -m streamlit run app.py
+streamlit run Home.py
 ```
 
 ## Why we create AI Marketer ?
