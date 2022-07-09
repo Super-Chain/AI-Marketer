@@ -133,7 +133,7 @@ pure-eval==0.2.2
 pyarrow==8.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycaret==2.2.3
+pycaret==2.3.10
 pycausalimpact==0.1.1
 pycparser==2.21
 pydantic==1.8.2
