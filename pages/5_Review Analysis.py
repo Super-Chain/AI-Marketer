@@ -2,8 +2,6 @@
 Created by : 
 Motaz Saidani (Github : Motaz-Saidani)
 '''
-
-
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
@@ -130,13 +128,13 @@ if st.button('Get Demo Data'):
                                                           
     
         #Output for POS:
-        p_title('Topic Vs Time')
+        st.title('Topic Vs Time')
         st.write(topics_overtime_neg)
         topics_distance_map_neg = neg_topic_model.visualize_topics(); topics_distance_map_neg
-        p_title('Topic Distance Map')
+        st.title('Topic Distance Map')
         st.write(topics_distance_map_neg)
         topics_bar_neg = neg_topic_model.visualize_barchart(top_n_topics=20); topics_bar_neg
-        p_title('Different Topics')
+        st.title('Different Topics')
         st.write(topics_bar_neg)
 
 
@@ -163,20 +161,6 @@ else:
         # converting 'date' to time object
         df['date'] = pd.to_datetime(df[date])
 
-        '''
-        # converting ISO names to full country names
-        example_country = 'United Kingdom'
-        country = st.text_input('Country Name',example_country)
-        converter = coco.CountryConverter()
-        iso_names = df['country'].unique()
-        short_names = np.array(converter.convert(names=iso_names, to='name_short'))
-        country_dict = dict(zip(iso_names, short_names))
-
-        for key, value in country_dict.items():
-            df['country'] = df['country'].str.replace(key, value)
-        
-        #country_chart=df['country'].value_counts()[:5]
-        '''
         # displaying results
         #print('\n', df['country'].value_counts(),'\n')
         #df['country'].value_counts()[:5].plot(kind='bar')

@@ -60,11 +60,6 @@ if st.button('Get Demo Data') :
         # store all similar words into all_words eg. all_words = [[a1, a2, a3...], [b1, b2, b3...]]
         all_words = []
 
-        #st.write("TRAINING MODEL")
-
-
-        #st.write("FINDING SIMILAR KEYWORDS")
-
         for att in attributes:
 
             ### Synonym Approach
@@ -178,7 +173,7 @@ else:
         company = st.text_input('Please input the column name of Company',company_example)
 
         # User upload file
-        uploaded_file_competitor = st.file_uploader("Choose a file (Header should include title, content and ratings)", key=competitor)
+        uploaded_file_competitor = st.file_uploader("Choose a file (Header should include title, content and ratings)")
 
         if uploaded_file_competitor is not None:
             # To read file as bytes:
