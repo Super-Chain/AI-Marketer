@@ -1,3 +1,4 @@
+
 import datetime as dt
 import pandas as pd
 import plotly.express as px
@@ -19,15 +20,11 @@ if st.button('Get Demo Data'):
 
     #Visualization 
         st.title('Visualization')
-        #Output dataframe with "segment" column
-        st.dataframe(r.customer_df)
-        #Output barchart
-        segment_df = r.segment_df
-        #segment_df['segment'][::-1]
-        #segment_df['no of customers'][::-1]
-        st.title('Distribution of user group')
-        fig = px.bar(segment_df,x="segment",y="no of customers")
-        st.plotly_chart(fig)
+       
+        st.dataframe(r.segment_table)
+        st.title('RMF Table')
+        st.write(r.rfm_table)
+        
         #['Champions', 'Loyal Accounts', 'Low Spenders', 'Potential Loyalist', 'Promising', 'New Active Accounts', 'Need Attention', 'About to Sleep', 'At Risk', 'Lost']
         
 else:
@@ -61,15 +58,9 @@ else:
 
             #Visualization 
                 st.title('Visualization')
-                #Output dataframe with "segment" column
-                st.dataframe(r.customer_df)
-                #Output barchart
-                segment_df = r.segment_df
-                #segment_df['segment'][::-1]
-                #segment_df['no of customers'][::-1]
-                st.title('Distribution of user group')
-                fig = px.bar(segment_df,x="segment",y="no of customers")
-                st.plotly_chart(fig)
+                st.dataframe(r.segment_table)
+                st.title('RMF Table')
+                st.write(r.rfm_table)
                 #['Champions', 'Loyal Accounts', 'Low Spenders', 'Potential Loyalist', 'Promising', 'New Active Accounts', 'Need Attention', 'About to Sleep', 'At Risk', 'Lost']
                 
                 
