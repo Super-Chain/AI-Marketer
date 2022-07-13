@@ -9,9 +9,6 @@ By using our preset marketing task, you can get answer from unstructured data in
 ## Website :
 www.ai-marketer.tech 
 
-## Demo : 
-http://www.app.ai-marketer.tech:8501/
-
 ## Update: 
 Updated the pages structure of Streamlit App, based on that all the functions are being moved to /pages folder, if you are not able to replicate the pages function, please update your streamlit version
 
