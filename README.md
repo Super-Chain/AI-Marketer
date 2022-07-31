@@ -105,7 +105,7 @@ We welcome your contribution anytime
 
 ## Collabration & Contact 
 Please feel free to contact us at : 
-businses@super-chain.tech
+support@ai-marketer.tech
 
 ## Version 
 Beta 
