@@ -95,11 +95,13 @@ Google Trans (https://github.com/ssut/py-googletrans)
 Plotly (https://plotly.com/)
 
 ## Creator & Contributor 
-Super Chain (www.super-chain.tech)
+Super Chain (Github : Super-Chain)
 
 LAU, Ching Ming, Samuel (Github : samuellau0802)
 
 Motaz Saidani (Github : Motaz-Saidani)
+
+Cat YUNG (Github : catyung)
 
 We welcome your contribution anytime
 
